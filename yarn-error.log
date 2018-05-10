@@ -1,0 +1,58 @@
+Arguments: 
+  /usr/local/Cellar/node/7.4.0/bin/node /usr/local/Cellar/yarn/1.2.1/libexec/bin/yarn.js add babel-plugin-external-helpers babel-preset-es2015 cssnano livereload npm-run-all pstcss-cssnext postcss-nested postcss-simple-vars rollup rollup-plugin-babel rollup-plugin-commonjs rollup-plugin-eslint rollup-plugin-node-resolve rollup-plugin-postcss rollup-plugin-replace rollup-plugin-uglify rollup-watch
+
+PATH: 
+  /usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
+
+Yarn version: 
+  1.2.1
+
+Node version: 
+  8.11.1
+
+Platform: 
+  darwin x64
+
+npm manifest: 
+  {
+    "name": "montaj-components",
+    "version": "1.0.0",
+    "description": "This is an example project to accompany a tutorial on using Rollup.",
+    "main": "build/js/main.min.js",
+    "scripts": {
+      "build": "rollup -c",
+      "dev": "rollup -c --watch",
+      "reload": "livereload 'build/'",
+      "watch": "npm-run-all --parallel reload dev",
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/andresin87/montaj-components.git"
+    },
+    "author": "Andrés Lucas <alucas@redpoints.com>",
+    "license": "ISC",
+    "bugs": {
+      "url": "https://github.com/andresin87/montaj-components/issues"
+    },
+    "homepage": "https://github.com/andresin87/montaj-components#readme"
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
+
+Trace: 
+  Error: https://nexus.rdpnts.com/repository/npm-group/pstcss-cssnext: Not found
+      at Request.params.callback [as _callback] (/usr/local/Cellar/yarn/1.2.1/libexec/lib/cli.js:62027:18)
+      at Request.self.callback (/usr/local/Cellar/yarn/1.2.1/libexec/lib/cli.js:123011:22)
+      at emitTwo (events.js:126:13)
+      at Request.emit (events.js:214:7)
+      at Request.<anonymous> (/usr/local/Cellar/yarn/1.2.1/libexec/lib/cli.js:123994:10)
+      at emitOne (events.js:116:13)
+      at Request.emit (events.js:211:7)
+      at IncomingMessage.<anonymous> (/usr/local/Cellar/yarn/1.2.1/libexec/lib/cli.js:123914:12)
+      at Object.onceWrapper (events.js:313:30)
+      at emitNone (events.js:111:20)
